@@ -4,7 +4,7 @@ GameMode 생명주기와 함수 호출 순서를 알아보자.
 
 2. GameMode Constructor
 
-3
+3.
 ```
 virtual void InitGame(
     const FString& MapName,
