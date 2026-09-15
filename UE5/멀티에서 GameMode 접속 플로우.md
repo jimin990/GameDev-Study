@@ -34,3 +34,4 @@ virtual APlayerController* Login(
 ```
 virtual void PostLogin(APlayerController* NewPlayer) override;
 ```
+로그인 완료 후 게임 참가 처리를 담당합니다.
