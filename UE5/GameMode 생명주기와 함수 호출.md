@@ -24,7 +24,9 @@ AActor 생명주기 함수로써, 게임모드에서는 이 시점에 InitGameSt
 ```
 virtual void InitGameState() override;
 ```
-GameState를 초기화하는 GameMode 함수
+GameState를 초기화하는 GameMode 함수입니다.
+<br/><br/>
+GameMode도 Actor로써 이 후 InitializeComponent(), PostInitializeComponents()가 동작합니다.
 
 ## 6. StartPlay()
 ```
