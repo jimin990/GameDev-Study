@@ -39,7 +39,10 @@ virtual void StartPlay() override
 게임모드가 게임 시작을 트리거하면, GameState가 World에 BeginPlay를 요청합니다.
 <br/><br/>
 그러면 World는 World에 존재하는 모든 액터에게 BeginPlay를 브로드캐스트합니다.
-
+<br/><br/>
+이때 GameState가 BeginPlay를 호출하는 이유는, 멀티 환경에서 GameMode는 서버에만 존재하지만,
+<br/><br/>
+GameState의 경우 서버와 클라이언트 모두 존재하며 Replicated 되기 때문입니다.
 ## 7. BeginPlay()
 ```
 virtual void BeginPlay() override;
