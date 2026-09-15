@@ -13,9 +13,7 @@ virtual void InitGame(
 ) override;
 ```
 현재 게임/맵에 대한 초기 설정하는 함수입니다.
-
 <br/><br/>
-
 이 시점에 아직 플레이어, 즉 Controller는 없을 수 있습니다.
 
 ## 4. PreInitializeComponents()
@@ -29,13 +27,9 @@ AActor 생명주기 함수로써, 게임모드에서는 이 시점에 InitGameSt
 virtual void InitGameState() override;
 ```
 GameState를 초기화하는 GameMode 함수입니다.
-
 <br/><br/>
-
 이 시점부터 GameState를 안전하게 호출할 수 있습니다.
-
 <br/><br/>
-
 GameMode도 Actor로써 이 후 InitializeComponent(), PostInitializeComponents()가 동작합니다.
 
 ## 6. StartPlay()
